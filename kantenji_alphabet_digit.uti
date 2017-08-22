@@ -1,0 +1,40 @@
+﻿# アルファベット
+uplow Aa 8-2,2
+uplow Bb 8-23,23
+uplow Cc 8-25,25
+uplow Dd 8-256,256
+uplow Ee 8-26,26
+uplow Ff 8-235,235
+uplow Gg 8-2356,2356
+uplow Hh 8-236,236
+uplow Ii 8-35,35
+uplow Jj 8-356,356
+uplow Kk 8-27,27
+uplow Ll 8-237,237
+uplow Mm 8-257,257
+uplow Nn 8-2567,2567
+uplow Oo 8-267,267
+uplow Pp 8-2357,2357
+uplow Qq 8-23567,23567
+uplow Rr 8-2367,2367
+uplow Ss 8-357,357
+uplow Tt 8-3567,3567
+uplow Uu 8-278,278
+uplow Vv 8-2378,2378
+uplow Ww 8-3568,3568
+uplow Xx 8-2578,2578
+uplow Yy 8-25678,25678
+uplow Zz 8-2678,2678
+
+# 数字
+litdigit 0 5678-356
+litdigit 1 5678-2
+litdigit 2 5678-23
+litdigit 3 5678-25
+litdigit 4 5678-256
+litdigit 5 5678-26
+litdigit 6 5678-235
+litdigit 7 5678-2356
+litdigit 8 5678-236
+litdigit 9 5678-35
+

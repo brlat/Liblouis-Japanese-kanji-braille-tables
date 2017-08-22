@@ -1,0 +1,23 @@
+﻿# 句読点、記号
+punctuation 、 68-0
+punctuation ・ 6-0
+punctuation 。 368-0-0
+punctuation （ 3678
+punctuation ） 367
+punctuation , 3
+punctuation . 368
+punctuation : 6-3
+punctuation / 57
+punctuation @ 358
+punctuation - 78
+punctuation _ 6-78
+punctuation ~ 6-25
+punctuation ( 3678
+punctuation ) 3678
+space 　 0
+space \x300C 0 newline
+space \s 0 blank
+space \t 9 tab
+space \x000a 0 newline
+space \x300C 0 newline
+
