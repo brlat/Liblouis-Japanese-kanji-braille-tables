@@ -1,0 +1,52 @@
+# 全角のアルファベットと数字
+# 全角アルファベット
+uplow Ａａ 1
+uplow Ｂｂ 12
+uplow Ｃｃ 14
+uplow Ｄｄ 145
+uplow Ｅｅ 15
+uplow Ｆｆ 124
+uplow Ｇｇ 1245
+uplow Ｈｈ 125
+uplow Ｉｉ 24
+uplow Ｊｊ 245
+uplow Ｋｋ 13
+uplow Ｌｌ 123
+uplow Ｍｍ 134
+uplow Ｎｎ 1345
+uplow Ｏｏ 135
+uplow Ｐｐ 1234
+uplow Ｑｑ 12345
+uplow Ｒｒ 1235
+uplow Ｓｓ 234
+uplow Ｔｔ 2345
+uplow Ｕｕ 136
+uplow Ｖｖ 1236
+uplow Ｗｗ 2456
+uplow Ｘｘ 1346
+uplow Ｙｙ 13456
+uplow Ｚｚ 1356
+
+# 全角数字
+digit ０ 245
+digit １ 1
+digit ２ 12
+digit ３ 14
+digit ４ 145
+digit ５ 15
+digit ６ 124
+digit ７ 1245
+digit ８ 125
+digit ９ 24
+numsign 3456
+litdigit ０ 245
+litdigit １ 1
+litdigit ２ 12
+litdigit ３ 14
+litdigit ４ 145
+litdigit ５ 15
+litdigit ６ 124
+litdigit ７ 1245
+litdigit ８ 125
+litdigit ９ 24
+
