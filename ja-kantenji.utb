@@ -1,23 +1,24 @@
 # liblouisで漢点字に変換するためのテーブル
 
 # 7 8の点を上に付けるように変更したunicode.dis
-include unicode78head.dis
+include ja-unicode78head.dis
+
 # 英語と数字の変換のために必要
 include en-ueb-g1.ctb
 
 # 句読点と記号
-include kantenji_punctuation.uti
+include ja-punctuation.uti
 
 # ひらがな
-include kantenji_hiragana.uti
+include ja-hiragana.uti
 
 # カタカナ
-include kantenji_katakana.uti
+include ja-katakana.uti
 
 # 全角のアルファベットと数字
-include kantenji_zenkaku_alphabet_digit.uti
+include ja-alphabet-digit.uti
 
 # 漢字
-include kantenji_kanji.uti
+include ja-kanji-kantenji.uti
 
 
