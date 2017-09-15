@@ -1,7 +1,7 @@
 # liblouisで漢点字に変換するためのテーブル
 
 # 7 8の点を上に付けるように変更したunicode.dis
-include ja-unicode78head.dis
+include ja-unicode78top.dis
 
 # 六点漢字、漢点字共通のファイル
 # 英語と数字の変換のために必要
