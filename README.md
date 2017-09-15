@@ -37,18 +37,7 @@
 * latinLetterDef8Dots.uti
 * unicode.dis
 
-### 漢点字を6点で表したものに変換するファイル
-
-上記以外に、8点で表すのが正式な漢点字を6点で表したものに変換するファイルもあります。
-
-6点の上に点を付ける代わりに漢字の始まりと終わりを、始点の6の点と終点の2 3の点で囲む形で表したものです。
-
-* ja-kantenji6dot.utb - 6点式の漢点字に変換するファイル
-* ja-kanji-kantenji6dot.uti - 6点で表した漢点字方式の漢字
-
-unicode.disの代わりに、en-us-brf.disをincludeすることでユニコード点字ではなく小文字NABCCで出力することができ、ブレイルセンスなどで表示できる形式で保存することができます。
-
-### 使い方
+### Liblouis付属のlou_translateでの使い方
 
 Liblouisに含まれるlou_translateを使う場合、コマンドプロンプトで:
 
