@@ -1,10 +1,4 @@
-# ja-unicode78top.dis
-# 7 8の点が6点の上に付くように変更
-
-# Licensed under LGPL.
-
-# This file will produce Unicode Braille output.
-# Use it as the first file in a table list.
+# Liblouis付属の、unicode.disを7 8の点が6点の上に付くように変更
 
 display \x2800 0
 display \x2802 1
