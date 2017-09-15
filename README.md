@@ -22,11 +22,10 @@
 上記の２つがメインのファイルで、下記のファイルはこのメインのファイルから読み込むファイルになっています。
 
 - ja-kanji-braille-shared.uti - 六点漢字、漢点字の両方で共通で読み込むファイル(全角のアルファベットと数字、句読点と記号、ひらがな、カタカナの一部)
-* ja-hiragana.uti - ひらがな
-* ja-katakana-rokutenkanji.uti - 六点漢字のルール用のカタカナ
-* ja-katakana-kantenji.uti - 漢点字のルールに合わせたカタカナ
-* ja-kanji-rokutenkanji.uti - 六点漢字方式の漢字
-* ja-kanji-kantenji.uti - 漢点字方式の漢字
+* ja-rokutenkanji-katakana.uti - 六点漢字ルールのカタカナ
+* ja-rokutenkanji-kanji.uti - 六点漢字方式の漢字
+* ja-kantenji-katakana.uti - 漢点字ルールのカタカナ
+* ja-kantenji-kanji.uti - 漢点字方式の漢字
 * ja-kantenji-unicode78top.dis - 感点字用に変更したunicode.dis
 
 これら以外に、Liblouis付属の下記のファイルも読み込んでいます。アルファベット、数字、半角の句読点、記号などは下記のファイルでの変換になります。
@@ -46,6 +45,8 @@
 
 * ja-kantenji6dot.utb - 6点式の漢点字に変換するファイル
 * ja-kanji-kantenji6dot.uti - 6点で表した漢点字方式の漢字
+
+unicode.disの代わりに、en-us-brf.disをincludeすることでユニコード点字ではなく小文字NABCCで出力することができ、ブレイルセンスなどで表示できる形式で保存することができます。
 
 ### 使い方
 
