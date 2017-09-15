@@ -3,20 +3,22 @@
 # 7 8の点を上に付けるように変更したunicode.dis
 include ja-unicode78head.dis
 
+# 六点漢字、漢点字共通のファイル
 # 英語と数字の変換のために必要
 include en-ueb-g1.ctb
-
-# 句読点と記号
-include ja-punctuation.uti
 
 # ひらがな
 include ja-hiragana.uti
 
-# カタカナ
-include ja-katakana.uti
-
 # 全角のアルファベットと数字
 include ja-alphabet-digit.uti
+
+# 句読点と記号
+include ja-punctuation.uti
+
+# 漢点字用のファイル
+# カタカナ
+include ja-katakana-kantenji.uti
 
 # 漢字
 include ja-kanji-kantenji.uti

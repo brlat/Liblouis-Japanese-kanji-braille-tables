@@ -1,0 +1,28 @@
+# liblouisで漢点字(6点式)に変換するためのテーブル
+# 漢字を表す始点と終点を6点の上に付ける代わりに、4の点(始点)と1の点(終点)で囲む形で漢点字を表す
+
+# ユニコード点字で表示するために必要
+include unicode.dis
+
+# 小文字NABCCで出力するときには、上をコメントアウトして下の#を消して有効にする
+#include en-us-brf.dis
+
+# 六点漢字、漢点字共通のファイル
+# 英語と数字の変換のために必要
+include en-ueb-g1.ctb
+
+# ひらがな
+include ja-hiragana.uti
+
+# 全角のアルファベットと数字
+include ja-alphabet-digit.uti
+
+# 句読点と記号
+include ja-punctuation.uti
+
+# 感点字(6dot)用のファイル
+# カタカナ
+include ja-katakana-kantenji.uti
+
+# 漢字
+include ja-kanji-kantenji6dot.uti
