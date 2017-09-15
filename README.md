@@ -22,11 +22,6 @@
 上記の２つがメインのファイルで、下記のファイルはこのメインのファイルから読み込むファイルになっています。
 
 - ja-kanji-braille-shared.uti - 六点漢字、漢点字の両方で共通で読み込むファイル(全角のアルファベットと数字、句読点と記号、ひらがな、カタカナの一部)
-* ja-rokutenkanji-katakana.uti - 六点漢字ルールのカタカナ
-* ja-rokutenkanji-kanji.uti - 六点漢字方式の漢字
-* ja-kantenji-katakana.uti - 漢点字ルールのカタカナ
-* ja-kantenji-kanji.uti - 漢点字方式の漢字
-* ja-kantenji-unicode78top.dis - 感点字用に変更したunicode.dis
 
 * unicode.dis - 変換結果をユニコード点字形式で出力するために必要
 
