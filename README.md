@@ -28,6 +28,8 @@
 * ja-kantenji-kanji.uti - 漢点字方式の漢字
 * ja-kantenji-unicode78top.dis - 感点字用に変更したunicode.dis
 
+* unicode.dis - 変換結果をユニコード点字形式で出力するために必要
+
 これら以外に、Liblouis付属の下記のファイルも読み込んでいます。アルファベット、数字、半角の句読点、記号などは下記のファイルでの変換になります。
 
 * en-ueb-g1.ctb - このファイルから以下のファイルが読み込まれている
@@ -35,7 +37,6 @@
 * en-ueb-chardefs.uti
 * en-ueb-math.ctb
 * latinLetterDef8Dots.uti
-* unicode.dis
 
 ### Liblouis付属のlou_translateでの使い方
 
