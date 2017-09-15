@@ -1,25 +1,18 @@
 # liblouisで六点漢字に変換するためのテーブル
 
-# 共通のファイル
 # ユニコード点字で表示するために必要
 include unicode.dis
 
-# 英語と数字の変換のために必要
+# Liblouisに含まれるファイル、英語と数字の変換のために必要
 include en-ueb-g1.ctb
 
-# ひらがな
-include ja-hiragana.uti
-
-# 全角のアルファベットと数字
-include ja-alphabet-digit.uti
-
-# 句読点と記号
-include ja-punctuation.uti
+# 六点漢字、漢点字共通のファイル
+include ja-kanji-braille-shared.uti
 
 # 六点漢字用ファイル
-# 漢字
-include ja-kanji-rokutenkanji.uti
-
 # カタカナ
 include ja-katakana-rokutenkanji.uti
+
+# 漢字
+include ja-kanji-rokutenkanji.uti
 
