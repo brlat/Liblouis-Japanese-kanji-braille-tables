@@ -12,9 +12,6 @@ include en-ueb-g1.ctb
 include ja-kanji-braille-shared.uti
 
 # 六点漢字用ファイル
-# 繰り返し記号の表し方が六点漢字と漢点字で異なるかもしれないので
-letter \x30FE 5-235 ヾ KATAKANA VOICED ITERATION MARK
-
 # 六点漢字といっしょに変換するときのカタカナ
 # カタカナの前に6-36の点、カタカナの後に23の点をつける
 begword \x30A2 6-36-1 ア KATAKANA begword A
