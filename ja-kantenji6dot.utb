@@ -2,18 +2,15 @@
 # 漢字を表す始点と終点を6点の上に付ける代わりに、6の点(始点)と2 3の点(終点)で囲む形で漢点字を表す
 
 # ユニコード点字で表示するために必要
-include unicode.dis
+#include unicode.dis
 # 小文字NABCCで出力するときには、上をコメントアウトして下の#を消して有効にする
-#include en-us-brf.dis
+include en-us-brf.dis
 
 # Liblouisに含まれているファイル、英語と数字の変換のために必要
 include en-ueb-g1.ctb
 
 # 六点漢字、漢点字共通のファイル
 include ja-kanji-braille-shared.uti
-
-# カタカナ
-include ja-kantenji-katakana.uti
 
 # 6点で感点字を表したもの。
 # 始点の6の点と終点の2 3の点の間に漢字の点の部分を書いて表す
@@ -6367,4 +6364,348 @@ sign 齶 6-1246-536-243-23
 sign 龕 6-1536-125-2536-23
 sign 龜 6-45-45-124536-23
 sign 龠 6-125-1245-1245-23
+
+
+# 漢点字といっしょに変換するときのカタカナ
+# カタカナの始まりに235の点、カタカナの後に23の点をつける
+begword \x30A2 235-1 ア KATAKANA begword A
+begword \x30A4 235-12 イ KATAKANA begword I
+begword \x30A6 235-14 ウ KATAKANA begword U
+begword \x30A8 235-124 エ KATAKANA begword E
+begword \x30AA 235-24 オ KATAKANA begword O
+begword \x30AB 235-16 カ KATAKANA begword KA
+begword \x30AC 235-5-16 ガ KATAKANA begword GA
+begword \x30AD 235-126 キ KATAKANA begword KI
+begword \x30AE 235-5-126 ギ KATAKANA begword GI
+begword \x30AF 235-146 ク KATAKANA begword KU
+begword \x30B0 235-5-146 グ KATAKANA begword GU
+begword \x30B1 235-1246 ケ KATAKANA begword KE
+begword \x30B2 235-5-1246 ゲ KATAKANA begword GE
+begword \x30B3 235-246 コ KATAKANA begword KO
+begword \x30B4 235-5-246 ゴ KATAKANA begword GO
+begword \x30B5 235-156 サ KATAKANA begword SA
+begword \x30B6 235-5-156 ザ KATAKANA begword ZA
+begword \x30B7 235-1256 シ KATAKANA begword SI
+begword \x30B8 235-5-1256 ジ KATAKANA begword ZI
+begword \x30B9 235-1456 ス KATAKANA begword SU
+begword \x30BA 235-5-1456 ズ KATAKANA begword ZU
+begword \x30BB 235-12456 セ KATAKANA begword SE
+begword \x30BC 235-5-12456 ゼ KATAKANA begword ZE
+begword \x30BD 235-2456 ソ KATAKANA begword SO
+begword \x30BE 235-5-2456 ゾ KATAKANA begword ZO
+begword \x30BF 235-135 タ KATAKANA begword TA
+begword \x30C0 235-5-135 ダ KATAKANA begword DA
+begword \x30C1 235-1235 チ KATAKANA begword TI
+begword \x30C2 235-5-1235 ヂ KATAKANA begword DI
+begword \x30C3 235-2 ッ KATAKANA begword SMALL TU
+begword \x30C4 235-1345 ツ KATAKANA begword TU
+begword \x30C5 235-5-1345 ヅ KATAKANA begword DU
+begword \x30C6 235-12345 テ KATAKANA begword TE
+begword \x30C7 235-5-12345 デ KATAKANA begword DE
+begword \x30C8 235-2345 ト KATAKANA begword TO
+begword \x30C9 235-5-2345 ド KATAKANA begword DO
+begword \x30CA 235-13 ナ KATAKANA begword NA
+begword \x30CB 235-123 ニ KATAKANA begword NI
+begword \x30CC 235-134 ヌ KATAKANA begword NU
+begword \x30CD 235-1234 ネ KATAKANA begword NE
+begword \x30CE 235-234 ノ KATAKANA begword NO
+begword \x30CF 235-136 ハ KATAKANA begword HA
+begword \x30D0 235-5-136 バ KATAKANA begword BA
+begword \x30D1 235-6-136 パ KATAKANA begword PA
+begword \x30D2 235-1236 ヒ KATAKANA begword HI
+begword \x30D3 235-5-1236 ビ KATAKANA begword BI
+begword \x30D4 235-6-1236 ピ KATAKANA begword PI
+begword \x30D5 235-1346 フ KATAKANA begword HU
+begword \x30D6 235-5-1346 ブ KATAKANA begword BU
+begword \x30D7 235-6-1346 プ KATAKANA begword PU
+begword \x30D8 235-12346 ヘ KATAKANA begword HE
+begword \x30D9 235-5-12346 ベ KATAKANA begword BE
+begword \x30DA 235-6-12346 ペ KATAKANA begword PE
+begword \x30DB 235-2346 ホ KATAKANA begword HO
+begword \x30DC 235-5-2346 ボ KATAKANA begword BO
+begword \x30DD 235-6-2346 ポ KATAKANA begword PO
+begword \x30DE 235-1356 マ KATAKANA begword MA
+begword \x30DF 235-12356 ミ KATAKANA begword MI
+begword \x30E0 235-13456 ム KATAKANA begword MU
+begword \x30E1 235-123456 メ KATAKANA begword ME
+begword \x30E2 235-23456 モ KATAKANA begword MO
+begword \x30E4 235-34 ヤ KATAKANA begword YA
+begword \x30E6 235-346 ユ KATAKANA begword YU
+begword \x30E8 235-345 ヨ KATAKANA begword YO
+begword \x30E9 235-15 ラ KATAKANA begword RA
+begword \x30EA 235-125 リ KATAKANA begword RI
+begword \x30EB 235-145 ル KATAKANA begword RU
+begword \x30EC 235-1245 レ KATAKANA begword RE
+begword \x30ED 235-245 ロ KATAKANA begword RO
+begword \x30EE 235-45-3 ヮ KATAKANA begword SMALL WA
+begword \x30EF 235-3 ワ KATAKANA begword WA
+begword \x30F0 235-23 ヰ KATAKANA begword WI
+begword \x30F1 235-235 ヱ KATAKANA begword WE
+begword \x30F2 235-35 ヲ KATAKANA begword WO
+begword \x30F3 235-356 ン KATAKANA begword N
+begword \x30F4 235-5-14 ヴ KATAKANA begword VU
+
+endword \x30A2 1-23 ア KATAKANA endword A
+endword \x30A4 12-23 イ KATAKANA endword I
+endword \x30A6 14-23 ウ KATAKANA endword U
+endword \x30A8 124-23 エ KATAKANA endword E
+endword \x30AA 24-23 オ KATAKANA endword O
+endword \x30AB 16-23 カ KATAKANA endword KA
+endword \x30AC 5-16 ガ KATAKANA endword GA
+endword \x30AD 126-23 キ KATAKANA endword KI
+endword \x30AE 5-126 ギ KATAKANA endword GI
+endword \x30AF 146-23 ク KATAKANA endword KU
+endword \x30B0 5-146 グ KATAKANA endword GU
+endword \x30B1 1246-23 ケ KATAKANA endword KE
+endword \x30B2 5-1246 ゲ KATAKANA endword GE
+endword \x30B3 246-23 コ KATAKANA endword KO
+endword \x30B4 5-246 ゴ KATAKANA endword GO
+endword \x30B5 156-23 サ KATAKANA endword SA
+endword \x30B6 5-156 ザ KATAKANA endword ZA
+endword \x30B7 1256-23 シ KATAKANA endword SI
+endword \x30B8 5-1256 ジ KATAKANA endword ZI
+endword \x30B9 1456-23 ス KATAKANA endword SU
+endword \x30BA 5-1456 ズ KATAKANA endword ZU
+endword \x30BB 12456-23 セ KATAKANA endword SE
+endword \x30BC 5-12456 ゼ KATAKANA endword ZE
+endword \x30BD 2456-23 ソ KATAKANA endword SO
+endword \x30BE 5-2456 ゾ KATAKANA endword ZO
+endword \x30BF 135-23 タ KATAKANA endword TA
+endword \x30C0 5-135 ダ KATAKANA endword DA
+endword \x30C1 1235-23 チ KATAKANA endword TI
+endword \x30C2 5-1235 ヂ KATAKANA endword DI
+endword \x30C3 2-23 ッ KATAKANA endword SMALL TU
+endword \x30C4 1345-23 ツ KATAKANA endword TU
+endword \x30C5 5-1345 ヅ KATAKANA endword DU
+endword \x30C6 12345-23 テ KATAKANA endword TE
+endword \x30C7 5-12345 デ KATAKANA endword DE
+endword \x30C8 2345-23 ト KATAKANA endword TO
+endword \x30C9 5-2345 ド KATAKANA endword DO
+endword \x30CA 13-23 ナ KATAKANA endword NA
+endword \x30CB 123-23 ニ KATAKANA endword NI
+endword \x30CC 134-23 ヌ KATAKANA endword NU
+endword \x30CD 1234-23 ネ KATAKANA endword NE
+endword \x30CE 234-23 ノ KATAKANA endword NO
+endword \x30CF 136-23 ハ KATAKANA endword HA
+endword \x30D0 5-136 バ KATAKANA endword BA
+endword \x30D1 6-136 パ KATAKANA endword PA
+endword \x30D2 1236-23 ヒ KATAKANA endword HI
+endword \x30D3 5-1236 ビ KATAKANA endword BI
+endword \x30D4 6-1236 ピ KATAKANA endword PI
+endword \x30D5 1346-23 フ KATAKANA endword HU
+endword \x30D6 5-1346 ブ KATAKANA endword BU
+endword \x30D7 6-1346 プ KATAKANA endword PU
+endword \x30D8 12346-23 ヘ KATAKANA endword HE
+endword \x30D9 5-12346 ベ KATAKANA endword BE
+endword \x30DA 6-12346 ペ KATAKANA endword PE
+endword \x30DB 2346-23 ホ KATAKANA endword HO
+endword \x30DC 5-2346 ボ KATAKANA endword BO
+endword \x30DD 6-2346 ポ KATAKANA endword PO
+endword \x30DE 1356-23 マ KATAKANA endword MA
+endword \x30DF 12356-23 ミ KATAKANA endword MI
+endword \x30E0 13456-23 ム KATAKANA endword MU
+endword \x30E1 123456-23 メ KATAKANA endword ME
+endword \x30E2 23456-23 モ KATAKANA endword MO
+endword \x30E4 34-23 ヤ KATAKANA endword YA
+endword \x30E6 346-23 ユ KATAKANA endword YU
+endword \x30E8 345-23 ヨ KATAKANA endword YO
+endword \x30E9 15-23 ラ KATAKANA endword RA
+endword \x30EA 125-23 リ KATAKANA endword RI
+endword \x30EB 145-23 ル KATAKANA endword RU
+endword \x30EC 1245-23 レ KATAKANA endword RE
+endword \x30ED 245-23 ロ KATAKANA endword RO
+endword \x30EE 45-3 ヮ KATAKANA endword SMALL WA
+endword \x30EF 3-23 ワ KATAKANA endword WA
+endword \x30F0 23-23 ヰ KATAKANA endword WI
+endword \x30F1 235-23 ヱ KATAKANA endword WE
+endword \x30F2 35-23 ヲ KATAKANA endword WO
+endword \x30F3 356-23 ン KATAKANA endword N
+endword \x30F4 5-14-23 ヴ KATAKANA endword VU
+
+# 2文字セットのカタカナ
+always ウィ 26-12
+always ウェ 26-124
+always ウォ 26-24
+always キャ 4-16
+always キュ 4-146
+always キョ 4-246
+always シャ 4-156
+always シュ 4-1456
+always ショ 4-2456
+always スィ 4-1256
+always チャ 4-135
+always チュ 4-1345
+always チョ 4-2345
+always ニャ 4-13
+always ニュ 4-134
+always ニョ 4-234
+always ヒャ 4-136
+always ヒュ 4-1346
+always ヒョ 4-2346
+always ミャ 4-1356
+always ミュ 4-13456
+always ミョ 4-23456
+always リャ 4-15
+always リュ 4-145
+always リョ 4-245
+always ヴァ 256-136
+always ヴィ 256-1236
+always ヴェ 256-12346
+always ヴォ 256-2346
+always ギャ 45-16
+always ギュ 45-146
+always ギョ 45-246
+always ジャ 45-156
+always ジュ 45-1456
+always ジョ 45-2456
+always ズィ 45-1256
+always ビャ 45-136
+always ビュ 45-1346
+always ビョ 45-2346
+always ピャ 46-136
+always ピュ 46-1346
+always ピョ 46-2346
+always ティ 4-1235
+always ファ 26-136
+always フィ 26-1236
+always フェ 26-12346
+always フォ 26-2346
+always シェ 4-12456
+always ジェ 45-12456
+always ディ 45-1235
+always トゥ 26-1345
+always ドゥ 256-1345
+always テュ 456-346
+always デュ 456-1345
+always チェ 4-12345
+always ツェ 26-12345
+
+begword ウィ 235-26-12
+begword ウェ 235-26-124
+begword ウォ 235-26-24
+begword キャ 235-4-16
+begword キュ 235-4-146
+begword キョ 235-4-246
+begword シャ 235-4-156
+begword シュ 235-4-1456
+begword ショ 235-4-2456
+begword スィ 235-4-1256
+begword チャ 235-4-135
+begword チュ 235-4-1345
+begword チョ 235-4-2345
+begword ニャ 235-4-13
+begword ニュ 235-4-134
+begword ニョ 235-4-234
+begword ヒャ 235-4-136
+begword ヒュ 235-4-1346
+begword ヒョ 235-4-2346
+begword ミャ 235-4-1356
+begword ミュ 235-4-13456
+begword ミョ 235-4-23456
+begword リャ 235-4-15
+begword リュ 235-4-145
+begword リョ 235-4-245
+begword ヴァ 235-256-136
+begword ヴィ 235-256-1236
+begword ヴェ 235-256-12346
+begword ヴォ 235-256-2346
+begword ギャ 235-45-16
+begword ギュ 235-45-146
+begword ギョ 235-45-246
+begword ジャ 235-45-156
+begword ジュ 235-45-1456
+begword ジョ 235-45-2456
+begword ズィ 235-45-1256
+begword ビャ 235-45-136
+begword ビュ 235-45-1346
+begword ビョ 235-45-2346
+begword ピャ 235-46-136
+begword ピュ 235-46-1346
+begword ピョ 235-46-2346
+begword ティ 235-4-1235
+begword ファ 235-26-136
+begword フィ 235-26-1236
+begword フェ 235-26-12346
+begword フォ 235-26-2346
+begword シェ 235-4-12456
+begword ジェ 235-45-12456
+begword ディ 235-45-1235
+begword トゥ 235-26-1345
+begword ドゥ 235-256-1345
+begword テュ 235-456-346
+begword デュ 235-456-1345
+begword チェ 235-4-12345
+begword ツェ 235-26-12345
+
+endword ウィ 26-12-23
+endword ウェ 26-124-23
+endword ウォ 26-24-23
+endword キャ 4-16-23
+endword キュ 4-146-23
+endword キョ 4-246-23
+endword シャ 4-156-23
+endword シュ 4-1456-23
+endword ショ 4-2456-23
+endword スィ 4-1256-23
+endword チャ 4-135-23
+endword チュ 4-1345-23
+endword チョ 4-2345-23
+endword ニャ 4-13-23
+endword ニュ 4-134-23
+endword ニョ 4-234-23
+endword ヒャ 4-136-23
+endword ヒュ 4-1346-23
+endword ヒョ 4-2346-23
+endword ミャ 4-1356-23
+endword ミュ 4-13456-23
+endword ミョ 4-23456-23
+endword リャ 4-15-23
+endword リュ 4-145-23
+endword リョ 4-245-23
+endword ヴァ 256-136-23
+endword ヴィ 256-1236-23
+endword ヴェ 256-12346-23
+endword ヴォ 256-2346-23
+endword ギャ 45-16-23
+endword ギュ 45-146-23
+endword ギョ 45-246-23
+endword ジャ 45-156-23
+endword ジュ 45-1456-23
+endword ジョ 45-2456-23
+endword ズィ 45-1256-23
+endword ビャ 45-136-23
+endword ビュ 45-1346-23
+endword ビョ 45-2346-23
+endword ピャ 46-136-23
+endword ピュ 46-1346-23
+endword ピョ 46-2346-23
+endword ティ 4-1235-23
+endword ファ 26-136-23
+endword フィ 26-1236-23
+endword フェ 26-12346-23
+endword フォ 26-2346-23
+endword シェ 4-12456-23
+endword ジェ 45-12456-23
+endword ディ 45-1235-23
+endword トゥ 26-1345-23
+endword ドゥ 256-1345-23
+endword テュ 456-346-23
+endword デュ 456-1345-23
+endword チェ 4-12345-23
+endword ツェ 26-12345-23
+
+# カタカナのクラスを定義
+class katakana ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴー
+
+# sign($S)で定義した漢字とひらがなの後にカタカナ(ユーザー定義クラスの1$w)がきているときに間にカタカナの始まり符号(235の点)を入れる
+noback context $S[]$w @235
+
+# digitで定義された数字($d)とカタカナの間にカタカナ始まり符号を入れる
+noback context $d[]$w @235
+
+# カタカナと、漢字ひらがなの間に、カタカナの終わり符号(23の点)を入れる
+noback context $w[]$S @23
+
+# カタカナとspace(空白$s)で定義された記号の間に、カタカナ終わり符号を入れる
+noback context $w[]$s @23
 
