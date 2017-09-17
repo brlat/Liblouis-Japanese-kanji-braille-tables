@@ -1,6 +1,8 @@
 # liblouisで漢点字に変換するためのテーブル
 
 # Liblouis付属の、unicode.disを7 8の点が6点の上に付くように変更
+# NVDAではこの指定は使えないようで、7 8の点が元のまま下に表示される
+# lou_translateではここの指定が有効になっている
 
 display \x2800 0
 display \x2802 1
@@ -265,7 +267,9 @@ include en-ueb-g1.ctb
 # 六点漢字、漢点字共通のファイル
 include ja-kanji-braille-shared.uti
 
+# 漢点字
 # 漢点字の始点と7の点、終点を8の点で指定
+# displayで7 8の点が6点の上に表示されるように変更する
 # 漢字(JIS第１水準)
 sign 亜 71-18
 sign 愛 736-18

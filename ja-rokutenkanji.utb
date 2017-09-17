@@ -12,7 +12,7 @@ include en-ueb-g1.ctb
 include ja-kanji-braille-shared.uti
 # カタカナの符号は六点漢字と漢点字とで異なるが、漢点字のものを使用
 
-# 六点漢字用ファイル
+# 六点漢字
 # 漢字(JIS第１水準)
 sign 亜 6-1-12
 sign 愛 46-1-246
