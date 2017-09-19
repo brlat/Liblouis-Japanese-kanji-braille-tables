@@ -53,6 +53,9 @@ litdigit ８ 125
 litdigit ９ 24
 
 # 全角の句読点や記号
+#sign × 56-16 英語のファイルで指定されているかもしれない
+punctuation ： 5-2
+punctuation ． 256
 punctuation 、 56-0
 punctuation ・ 5-0
 punctuation 「 0-36
