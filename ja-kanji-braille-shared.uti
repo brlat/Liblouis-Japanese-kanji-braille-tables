@@ -82,7 +82,7 @@ punctuation ” 356-2
 punctuation － 0-36-0
 punctuation ℃ 56-145-6-14-0
 # 。？！の後に」など以外のときはますあけを入れる
-punctuation 。 256
+punctuation 。 256-0
 punctuation ？ 26
 punctuation ！ 235
 always 。」 256-36-0
