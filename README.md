@@ -1,4 +1,37 @@
-﻿## Liblouisで日本語を六点漢字と漢点字に変換するためのテーブルファイル
+﻿## スクリーンリーダーNVDAのLiblouisで日本語を六点漢字または漢点字(6点式)で表示するためのテーブルファイル
+
+### 各ファイルの説明
+
+* ja-rokutenkanji.utb - 六点漢字で表示するためのファイル
+* ja-kantenji6dot.utb - 漢点字で表示するためのファイル(ただし8点式ではなく、6の点と2 3の点で囲む形の6点式で表したもの)
+
+### NVDAでこのファイルを使うための設定
+
+たとえばNVDAの設定の点字の出力テーブルで「統一英語点字2級」を選んだときに日本語を六点漢字で表示するには次のような操作をします。
+
+1. ja-rokutenkanji.utbをNVDAのインストールフォルダ内のlouisの中のtablesフォルダにコピーします。(管理者権限でないとコピーできません)
+2. 同じくtablesフォルダ内のen-ueb-g2.ctbファイルの「include en-ueb-g1.ctb」の行の下に「include ja-rokutenkanji.utb」と書いた行を追加して上書き保存します(元のファイルはバックアップしておいてください)。
+3. NVDAを再起動して、出力テーブルを「統一英語点字2級」に設定すると、六点漢字が表示されます。
+
+漢点字(6点式)で表示したい場合は、上記の「ja-rokutenkanji.utb」の代わりに「ja-kantenji6dot.utb」にします。
+
+出力テーブルの「統一英語1級」で六点漢字を表示したい場合は、「en-ueb-g1.ctb」ファイルの「include en-ueb-math.ctb」の行の下に、「include ja-rokutenkanji.utb」の行を追加します。
+
+たとえば「1級」に六点漢字、「2級」に漢点字のファイルをincludeしておけば、出力テーブルを切り替えることで六点漢字/漢点字の切り替えができます。
+
+### Liblouis付属のlou_translateでの使い方
+
+Liblouisに含まれるlou_translateを使う場合、コマンドプロンプトで:
+
+> lou_translate -f ja-rokutenkanji.utb <input.txt >output.txt
+
+のようにします。
+
+input.txtは変換したいテキストファイルで、文字コードがutf8のものです。
+
+output.txtは出力ファイル名です。
+
+ja-rokutenkanji.utbの代わりに、ja-kantenji6dot.utbを指定すると漢点字に変換できます。
 
 ### 著作権について
 
@@ -12,46 +45,7 @@
 
 私がここに作成しているデータは個人的学習のためのものです。
 
-利用する場合、それぞれの責任でお願いします。
+私が作成している部分については、作者の表示をせずに、どのような形で使用してもかまいませんが、その結果について私は責任を負いません。
 
-### 各ファイルの説明
-
-* ja-rokutenkanji.utb - 六点漢字に変換するためのファイル
-* ja-kantenji.utb - 漢点字に変換するためのファイル
-
-上記の２つがメインのファイルで、下記のファイルはこのメインのファイルから読み込むファイルになっています。
-
-- ja-kanji-braille-shared.uti - 六点漢字、漢点字の両方で共通で読み込むファイル(全角のアルファベットと数字、句読点と記号、ひらがな、カタカナ)
-
-カタカナを囲む符号は六点漢字と漢点字で異なるのですが、ファイルの修正をシンプルにするために、今は漢点字の符号に合わせています。
-
-これら以外に、Liblouis付属の下記のファイルも読み込んでいます。
-
-* unicode.dis - 変換結果をユニコード点字形式で出力するために必要
-* en-us-brf.dis - unicode.disの代わりにこちらを読み込むとNABCCで出力できます
-* en-ueb-g1.ctb - このファイルから以下のファイルが読み込まれています
-* braille-patterns.cti
-* en-ueb-chardefs.uti
-* en-ueb-math.ctb
-* latinLetterDef8Dots.uti
-
-### Liblouis付属のlou_translateでの使い方
-
-Liblouisに含まれるlou_translateを使う場合、コマンドプロンプトで:
-
-> lou_translate -f ja-rokutenkanji.utb <input.txt >output.txt
-
-のようにします。
-
-ja-rokutenkanji.utbは六点漢字に変換するためのファイルです。
-
-input.txtは変換したいテキストファイルで、文字コードがutf8のものです。
-
-output.txtは出力ファイル名です。
-
-ja-rokutenkanji.utbの代わりに、ja-kantenji.utbを指定すると漢点字に変換できます。
-
-
-
-
+仕様する際は自己責任でお願いします。
 
