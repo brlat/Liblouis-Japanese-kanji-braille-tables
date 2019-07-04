@@ -15,7 +15,7 @@ githubのページの中の「Clone or download」ボタンを押して、「Dow
 
 1. ja-rokutenkanji.utbをNVDAのインストールフォルダ内のlouisの中のtablesフォルダにコピーします。(管理者権限でないとコピーできません)
 2. 同じくtablesフォルダ内のen-ueb-g1.ctbファイルの「include en-ueb-math.ctb」の行の下に「include ja-rokutenkanji.utb」と書いた行を追加して上書き保存します(元のファイルはバックアップしておいてください)。
-3. NVDAを再起動して、出力テーブルを「統一英語点字2級」に設定すると、六点漢字が表示されます。
+3. NVDAを再起動して、出力テーブルを「統一英語点字1級」に設定すると、六点漢字が表示されます。
 
 漢点字(6点式)で表示したい場合は、上記の「ja-rokutenkanji.utb」の代わりに「ja-kantenji6dot.utb」にします。
 
